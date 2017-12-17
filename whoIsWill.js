@@ -1,25 +1,17 @@
-var i = 0;
+const w = ['Korean','Lived in Kuwait','Chicago','British School','SAIC','Jesus Follower','Invely\'s','withoutwax.me'];
 
-function whoIsWill() {
-  console.log('This is Will');
-  // Will;
-
-  // Korean Born;
-  // Lived in Kuwait;
-  // Chicago;
-  // British School;
-  // Art School;
-  // Jesus Follower;
-  // Invely's;
-  // withoutwax.me
+function will() {
+  let i = Math.floor(Math.random() * w.length);
+  console.log(`Will: ${w[i]}`);
 }
 
-function Will() {
-  whoIsWill();
-  i++;
-  if (i < 20) {
-    Will();
-  }
-}
+will();
 
-Will();
+// Korean Born;
+// Lived in Kuwait;
+// Chicago;
+// British School;
+// Art School;
+// Jesus Follower;
+// Invely's;
+// withoutwax.me
